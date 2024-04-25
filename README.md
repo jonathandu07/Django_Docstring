@@ -4,5 +4,7 @@
 
 ## Commandes Django
 
-1. `python -m venv .env`
-`.env` est le nom donné à notre environnement virtuelle
+1. `python -m venv venv`
+`venv` est le nom donné à notre environnement virtuelle
+
+2. 
