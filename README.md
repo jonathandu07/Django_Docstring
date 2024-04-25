@@ -52,3 +52,9 @@ ALLOWED_HOSTS = ['192.168.10.219']
 `python manage.py migrate`
 
 Pour retirer l'erreur lorsqu'on lance le serveur
+
+### Ajouter des templates
+**pour faire reconnaitre son fichier template**
+1. Aller dans settings.py
+2. Aller dans TEMPLATES
+3. Ajouter dans `'DIRS : []` le chemin de son dossier templates
