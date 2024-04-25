@@ -36,3 +36,13 @@
 
 ### Démarer le serveur
 - `python manage.py runserver `
+
+**pour y avoir accès sur le réseau local**
+- `python manage.py runserver 0.0.0.0:8000`
+puis se rendre à l'addresse suivante : http://192.168.10.219:8000
+
+Ne pas oublier de mettre à jour cette ligne : 
+
+python```
+ALLOWED_HOSTS = ['192.168.10.219']
+```
