@@ -7,8 +7,10 @@
 1. `python -m venv venv`
 - `venv` est le nom donné à notre environnement virtuelle
 
-2. `.\venv\Scripts\Activate.ps1`  ou `venv\Scripts\activate`
+2. `.\venv\Scripts\Activate.ps1`  ou `venv\Scripts\activate` ou `.\Scripts\Activate`
 - pour activer l'environment virtuel
+- Pour désactiver : `deactivate`
+
 
 3. `cd venv`
 - Pour aller dans le répertoire `venv`
@@ -42,7 +44,11 @@
 puis se rendre à l'addresse suivante : http://192.168.10.219:8000
 
 Ne pas oublier de mettre à jour cette ligne : 
-
-python```
+```python
 ALLOWED_HOSTS = ['192.168.10.219']
 ```
+
+### Commande pour faire les migration sur la base de données
+`python manage.py migrate`
+
+Pour retirer l'erreur lorsqu'on lance le serveur

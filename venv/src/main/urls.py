@@ -21,7 +21,7 @@ from django.views.defaults import server_error
 from .views import index
 
 urlpatterns = [
-    path('', index, name="index"), 
+    path('', index, name="accueil"), 
     path('admin/', admin.site.urls),
     path('bonjour/', server_error),
 ]
