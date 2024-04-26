@@ -1,0 +1,10 @@
+{% block title %}
+  Jonathan - Dev Page
+{% endblock %}
+{% block body %}
+  {% if is_mobile %}
+    {% include 'dev/Mobile/dev_mobile.html' %}
+  {% else %}
+    {% include 'dev/Desktop/dev_desktop.html' %}
+  {% endif %}
+{% endblock %}

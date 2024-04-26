@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # ajout de sass
     'django_sass',
+    # Mes app
+    'devApp',
 ]
 
 MIDDLEWARE = [
