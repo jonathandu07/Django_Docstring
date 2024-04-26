@@ -58,3 +58,6 @@ Pour retirer l'erreur lorsqu'on lance le serveur
 1. Aller dans settings.py
 2. Aller dans TEMPLATES
 3. Ajouter dans `'DIRS : []` le chemin de son dossier templates
+
+**liste de filtres dans Django template**
+https://docs.djangoproject.com/en/5.0/ref/templates/builtins/
