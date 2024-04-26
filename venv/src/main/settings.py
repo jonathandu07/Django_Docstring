@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # ajout de sass
     'django_sass',
+    # Détection des appareils
+    'django_user_agents',
     # Mes app
     'devApp',
 ]
@@ -51,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_user_agents.middleware.UserAgentMiddleware',  # Ajouter ce middleware
 ]
 
 ROOT_URLCONF = 'main.urls'

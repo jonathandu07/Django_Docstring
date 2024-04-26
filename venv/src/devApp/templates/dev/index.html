@@ -1,10 +1,12 @@
-{% block title %}
-  Jonathan - Dev Page
-{% endblock %}
 {% block body %}
-  {% if is_mobile %}
-    {% include 'dev/Mobile/dev_mobile.html' %}
-  {% else %}
-    {% include 'dev/Desktop/dev_desktop.html' %}
-  {% endif %}
+{% if is_mobile %}
+{% include 'dev/Mobile/dev_mobile.html' %}
+{% elif is_tablet %}
+{% include 'dev/Tablet/dev_tablet.html' %}
+{% else %}
+{% include 'dev/Desktop/dev_desktop.html' %}
+{% endif %}
+<div>Is Mobile: {{ is_mobile }}</div>
+<div>Is Tablet: {{ is_tablet }}</div>
+<div>Is Desktop: {{ is_desktop }}</div>  <!-- This can help you debug -->
 {% endblock %}
