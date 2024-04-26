@@ -61,3 +61,7 @@ Pour retirer l'erreur lorsqu'on lance le serveur
 
 **liste de filtres dans Django template**
 https://docs.djangoproject.com/en/5.0/ref/templates/builtins/
+
+
+### Créer une application
+`python manage.py startapp nomAPP`
